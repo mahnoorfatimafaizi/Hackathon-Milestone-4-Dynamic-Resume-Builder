@@ -1,0 +1,55 @@
+header {
+    background-color: #b4167f;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+#form-section, #resume-section {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background: #f194d2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body{
+    background-color: rgb(225, 209, 209);
+}
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #b4167f;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resume {
+    margin-top: 20px;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
