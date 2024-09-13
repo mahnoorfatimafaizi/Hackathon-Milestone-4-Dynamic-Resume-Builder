@@ -20,6 +20,7 @@ const resumeEducationContent = document.getElementById(
 const resumeWorkContent = document.getElementById("resume-work-content")!;
 const resumeSkillsList = document.getElementById("resume-skills-list")!;
 
+
 // Event listener for form submission
 form.addEventListener("submit", (event) => {
   event.preventDefault(); // Prevent page refresh

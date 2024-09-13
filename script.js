@@ -1,21 +1,20 @@
 "use strict";
-// TypeScript code for the dynamic resume builder
 // Grabbing form and resume elements from the DOM
-const form = document.getElementById('resume-form');
-const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email');
-const phoneInput = document.getElementById('phone');
-const educationInput = document.getElementById('education');
-const workExperienceInput = document.getElementById('work-experience');
-const skillsInput = document.getElementById('skills');
+const form = document.getElementById("resume-form");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const phoneInput = document.getElementById("phone");
+const educationInput = document.getElementById("education");
+const workExperienceInput = document.getElementById("work-experience");
+const skillsInput = document.getElementById("skills");
 // Grabbing elements where we will display the resume
-const resumeName = document.getElementById('resume-name');
-const resumeContact = document.getElementById('resume-contact');
-const resumeEducationContent = document.getElementById('resume-education-content');
-const resumeWorkContent = document.getElementById('resume-work-content');
-const resumeSkillsList = document.getElementById('resume-skills-list');
+const resumeName = document.getElementById("resume-name");
+const resumeContact = document.getElementById("resume-contact");
+const resumeEducationContent = document.getElementById("resume-education-content");
+const resumeWorkContent = document.getElementById("resume-work-content");
+const resumeSkillsList = document.getElementById("resume-skills-list");
 // Event listener for form submission
-form.addEventListener('submit', (event) => {
+form.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevent page refresh
     // Update resume with form values
     resumeName.textContent = nameInput.value;
@@ -23,10 +22,10 @@ form.addEventListener('submit', (event) => {
     resumeEducationContent.textContent = educationInput.value;
     resumeWorkContent.textContent = workExperienceInput.value;
     // Update skills section, splitting skills by commas and adding each as a list item
-    resumeSkillsList.innerHTML = ''; // Clear existing skills
-    const skillsArray = skillsInput.value.split(',').map(skill => skill.trim()); // Split by comma and trim
-    skillsArray.forEach(skill => {
-        const li = document.createElement('li');
+    resumeSkillsList.innerHTML = ""; // Clear existing skills
+    const skillsArray = skillsInput.value.split(",").map((skill) => skill.trim()); // Split by comma and trim
+    skillsArray.forEach((skill) => {
+        const li = document.createElement("li");
         li.textContent = skill;
         resumeSkillsList.appendChild(li);
     });
